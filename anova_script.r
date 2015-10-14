@@ -1,3 +1,4 @@
+# Check if packages are installed (if not, install)
 inst_pkgs = load_pkgs =  c("ggplot2","grid","ggfortify")
 inst_pkgs = inst_pkgs[!(inst_pkgs %in% installed.packages()[,"Package"])]
 if(length(inst_pkgs)) install.packages(inst_pkgs)
